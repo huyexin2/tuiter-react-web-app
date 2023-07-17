@@ -1,0 +1,94 @@
+body{
+    font-family:"Arial Black";
+    color: Black;
+}
+.padded-top-left {
+    padding-top: 12px;
+    padding-left: 16px;
+}
+
+.padded-left-12{
+    padding-left:12px;
+}
+
+.padded-right-12{
+    padding-right:12px;
+}
+
+.padded-left-76{
+    padding-left:76px;
+}
+
+.font-size-20{
+    font-size: 20px;
+}
+
+.padded-top-left-handle {
+    color:lightgray;
+    padding-top: 16px;
+    padding-left: 16px;
+}
+
+.selected{
+    color:lightgray;
+    padding-top: 12px;
+    border-bottom: solid 1px lightgray;
+}
+
+.border-left{
+    color:lightgray;
+    padding-top: 12px;
+    border-left: solid 1px lightgray;
+}
+
+.image-avatar{
+    width:48px;
+    height:48px;
+    border-radius: 50%;
+}
+
+.float-left {
+    float: left;
+}
+.color-white{
+    color:white;
+}
+
+.color-lightgrey{
+    color:lightgray;
+}
+
+.font-size-15{
+    font-size:15px;
+}
+
+.float-done {
+    clear: both;
+}
+
+.max-width-506{
+    max-width: 506px;
+}
+
+.padded-right-16{
+    padding-right:16px;
+}
+
+.padded-bottom-12{
+    padding-bottom:12px;
+}
+
+.image-format{
+    width:504px;
+    height:264px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+
+.padding-all-12 {
+    padding: 12px;
+}
+
+.color-red{
+    color:red;
+}
