@@ -1,13 +1,14 @@
+import logo from './logo.svg';
 import './App.css';
-import Assignment3 from "./labs/a3";
-import HelloWorld from "./labs/a3/hello-world";
-import Tuiter from "./tuiter/index"
+// import Assignment3 from "./labs/a3";
+// import HelloWorld from "./labs/a3/hello-world";
+// import Tuiter from "./tuiter/index"
 
 function App() {
     return (
         <div className="App">
             <header className="App-header">
-
+                <img src={logo} className="App-logo" alt="logo" />
                 <h1> Welcome to Web Dev</h1>
                 <p>
                     Edit <code>src/App.js</code> and save to reload.
