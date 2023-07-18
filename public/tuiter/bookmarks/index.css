@@ -1,35 +1,38 @@
-.margin-right {
+.wd-margin-right {
     margin-left: 10px;
 }
 .p {
     font-family:"Arial";
     color: grey;
 }
-.font-arial{
+.wd-font-arial{
     font-family:"Arial";
 }
 .margin-all-around {
     margin: 5px;
 }
-.border-grey {
+.wd-border-grey {
     border-color: grey; }
 
-.rounded-corners-all-around {
+.wd-rounded-corners-all-around {
     border-radius: 50px;
 }
-.rounded-corners-top {
+.wd-rounded-corners-top {
     border-top-left-radius: 40px;
     border-top-right-radius: 40px;
 }
-.border-thin {
+.wd-border-thin {
     border-width: 1px; }
-.border-solid {
+.wd-border-solid {
     border-style: solid; }
-.padded-left {
+.wd-padded-left {
     padding-left: 50px;
 }
-.padded-bottom {
+.wd-padded-bottom {
     padding-bottom: 50px;
+}
+.wd-float-left{
+    float: left
 }
 
 

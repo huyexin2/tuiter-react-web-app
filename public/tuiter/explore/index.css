@@ -1,72 +1,27 @@
-.dimension-portrait {
-    width: 75px;
-    height: 100px;
-}
-
-.dimension-landscape {
-    width: 100px;
-    height: 75px;
-}
 
 .dimension-square {
     width: 75px;
     height: 75px;
 }
 
-.bg-color-yellow {
-    background-color: yellow;
-}
-
-.bg-color-red {
-    background-color: red;
-}
-
-.bg-color-green {
-    background-color: green;
-}
-
-.bg-color-blue {
-    background-color: blue;
-}
-
-.fg-color-white {
-    color: white;
-}
-
-.fg-color-black {
+.wd-fg-color-black {
     color: black;
 }
 
-.fg-color-grey {
+.wd-fg-color-grey {
     color: grey;
 }
 
-.fg-color-orange {
-    color: orange;
-}
-
-.fg-color-blue {
-    color: blue;
-}
-
-.fg-color-green {
-    color: green;
-}
-
-.fg-color-red {
-    color: red;
-}
-
-.float-left {
+.wd-float-left {
     float: left;
 }
 
-.float-right {
+.wd-float-right {
     float: right;
     height: 100px;
 }
 
-.float-done {
+.wd-float-done {
     clear: both;
 }
 
@@ -141,4 +96,7 @@
 }
 .padded-bottom {
     padding-bottom: 10px;
+}
+.wd-thick {
+    font-weight: bold;
 }
