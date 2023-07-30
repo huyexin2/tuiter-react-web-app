@@ -1,0 +1,44 @@
+[
+  {
+    "_id": 234,
+    "topic": "Space  ",
+    "userName": "spacex",
+    "title": "100s of SpaceX Starships land on Mars after a 6 month journey. 1000s of Martian colonists being building Mars Base 1",
+    "time": "2h",
+    "image": "https://asset.brandfetch.io/id2g3lee9x/idXX_e5k_s.jpeg?updated=166851560",
+    "liked": true,
+    "replies": 123,
+    "retuits": 432,
+    "likes": 2345,
+    "handle": "@spacex",
+    "tuit": "You want to wake up in the morning and think the future is going to be great - and that’s what being a spacefaring civilization is all about. It’s about believing in the future and thinking that the future will be better than the past. And I can’t think of anything more exciting than going out there and being among the stars"
+  },
+  {
+    "_id": 345,
+    "topic": "Tesla  ",
+    "userName": "tesla",
+    "title": "An American multinational automotive and clean energy company",
+    "time": "3h",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Tesla_T_symbol.svg/255px-Tesla_T_symbol.svg.png?20170327222004",
+    "liked": true,
+    "replies": 23,
+    "retuits": 43,
+    "likes": 345,
+    "handle": "@tesla",
+    "tuit": "You want to wake up in the morning and think the future is going to be great - and that’s what being a spacefaring civilization is all about. It’s about believing in the future and thinking that the future will be better than the past. And I can’t think of anything more exciting than going out there and being among the stars"
+  },
+  {
+    "_id": 456,
+    "topic": "React  ",
+    "userName": "react",
+    "title": "React is a community. It's a place where you can ask for help, find opportunities, and meet new friends.",
+    "time": "2h",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1024px-React-icon.svg.png",
+    "liked": true,
+    "replies": 13,
+    "retuits": 165,
+    "likes": 2345,
+    "handle": "@react",
+    "tuit": "React is a free and open-source front-end JavaScript library for building user interfaces based on components. It is maintained by Meta and a community of individual developers and companies. React can be used to develop single-page, mobile, or server-rendered applications with frameworks like Next.js."
+  }
+]
