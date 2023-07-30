@@ -1,14 +1,21 @@
-import Assignment3 from "./a3";
 import Nav from "../nav";
-import ConditionalOutputInline from "./a3/conditional-output/conditional-output-inline";
-import ConditionalOutputIfElse from "./a3/conditional-output/conditional-output-if-else";
+import Assignment3 from "./a3";
+import Assignment4 from "./a4";
+import {Routes, Route}
+    from "react-router";
 
 function Labs() {
-    return(
+    return (
         <div>
             <Nav/>
-            <Assignment3/>
+            <Routes>
+                <Route path="a3"
+                       element={<Assignment3/>}/>
+                <Route path="a4"
+                       element={<Assignment4/>}/>
+            </Routes>
         </div>
     );
 }
-export default Labs;
+
+export default Labs
