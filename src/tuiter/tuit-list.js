@@ -1,13 +1,16 @@
-import React from "react";
-import {useSelector} from "react-redux";
+import React, {useEffect} from "react";
+import {useDispatch, useSelector} from "react-redux";
+import {findTuitsThunk} from "./services/tuits-thunks";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faCheckCircle, faReply, faRetweet, faHeart, faArrowUpFromBracket, faXmark} from "@fortawesome/free-solid-svg-icons";
-import {useDispatch} from "react-redux";
 import {deleteTuit} from "./reducers/home-tuits-reducer";
 
 function TuitsList() {
-    const  {tuits}  = useSelector(state => state.homeTuits)
+    const  {homeTuits, loading}  = useSelector(state => state.homeTuits)
     const dispatch = useDispatch();
+    useEffect(() => {
+        dispatch(findTuitsThunk())
+    }, [])
     const deleteTuitHandler = (id) => {
         dispatch(deleteTuit(id));
     }
@@ -15,8 +18,13 @@ function TuitsList() {
     return(
         <>
             <ul className="list-group">
+                { loading &&
+                    <li className="list-group-item">
+                        Loading...
+                    </li>
+                }
                 {
-                    tuits.map(tuit =>
+                    homeTuits.map(tuit =>
                         <li className="list-group-item">
                             <div className="row">
                                 <div className="col-1">
