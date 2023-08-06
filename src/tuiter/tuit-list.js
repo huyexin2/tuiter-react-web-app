@@ -1,18 +1,32 @@
-import React, {useEffect} from "react";
+import React, {useEffect, useState} from "react";
 import {useDispatch, useSelector} from "react-redux";
-import {findTuitsThunk} from "./services/tuits-thunks";
+import {findTuitsThunk, deleteTuitThunk, updateTuitThunk} from "./services/tuits-thunks";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faCheckCircle, faReply, faRetweet, faHeart, faArrowUpFromBracket, faXmark} from "@fortawesome/free-solid-svg-icons";
-import {deleteTuit} from "./reducers/home-tuits-reducer";
+
 
 function TuitsList() {
     const  {homeTuits, loading}  = useSelector(state => state.homeTuits)
+    const [likes, setLikes] = useState(homeTuits.likes);
+    const [liked, setLiked] = useState(homeTuits.liked);
+    const handleLikeClick = () => {
+        if (liked) {
+            setLikes(likes - 1);
+            setLiked(false);
+        } else {
+            setLikes(likes + 1);
+            setLiked(true);
+        }
+    };
+    const likeIcon = liked
+        ? <FontAwesomeIcon color={"red"} onClick={handleLikeClick} icon={faHeart}/>
+        : <FontAwesomeIcon onClick={handleLikeClick} icon={faHeart}/>;
     const dispatch = useDispatch();
     useEffect(() => {
         dispatch(findTuitsThunk())
     }, [])
     const deleteTuitHandler = (id) => {
-        dispatch(deleteTuit(id));
+        dispatch(deleteTuitThunk(id));
     }
 
     return(
@@ -50,7 +64,7 @@ function TuitsList() {
                                             <p className="float-start float-done">&nbsp;{tuit.retuits}</p>
                                         </div>
                                         <div className="col-3">
-                                            <FontAwesomeIcon className="float-start" icon={faHeart} />
+                                            {likeIcon}
                                             <p className="float-start float-done">&nbsp;{tuit.likes}</p>
                                         </div>
                                         <div className="col-3">

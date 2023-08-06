@@ -1,5 +1,5 @@
 import React from "react";
-import TuitsList from "./tuit-list";
+import TuitsList from "./tuits/index";
 import WhatsHappening from "./whats-happening";
 
 function HomeScreen() {
