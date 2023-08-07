@@ -46,7 +46,6 @@ function ProfileScreen() {
                 navigate("/tuiter/login");
             }}>                   Logout</button>
         <button onClick={save}>Save  </button>
-        ;
     </div>)
 }
 export default ProfileScreen;

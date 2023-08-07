@@ -35,7 +35,7 @@ function RegisterScreen() {
             </div>
             <button className="btn btn-primary mt-2"
                     onClick={handleRegister}>
-                Login
+                Register
             </button>
         </div>
     )
