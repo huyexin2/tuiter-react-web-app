@@ -16,8 +16,6 @@ const NavigationSidebar = () => {
 
             <Link to={"/tuiter/home "} className={`list-group-item
                 ${active === "home" ? "active" : ""}`}><FontAwesomeIcon icon={faHome} />&nbsp;&nbsp;&nbsp;Home</Link>
-
-
             <Link to={"/tuiter/explore "} className={`list-group-item
                 ${active === "explore" ? "active" : ""}`}><FontAwesomeIcon icon={faFileExport} />&nbsp;&nbsp;&nbsp;Explore</Link>
             <Link to={"/tuiter/notifications "} className={`list-group-item
